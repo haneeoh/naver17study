@@ -1,0 +1,12 @@
+package day1212;
+
+public class myDate {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int=year,month,day;
+		year=2024;
+		
+	}
+
+}
