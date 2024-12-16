@@ -5,7 +5,7 @@ public class Ex1Switch {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//switch 문
-		int n=4;
+		int n=2;
 
 		switch(n) {
 		case 1:
