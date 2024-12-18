@@ -8,7 +8,7 @@ eclipse.preferences.version=1
 org.eclipse.jdt.internal.ui.navigator.layout=2
 org.eclipse.jdt.internal.ui.navigator.librariesnode=true
 org.eclipse.jdt.ui.formatterprofiles.version=23
-org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates><template autoinsert\="true" context\="java-statements" deleted\="false" description\="print to standard out" enabled\="true" name\="sysf">System.out.printf(${word_selection}${});${cursor}</template></templates>
+org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates><template autoinsert\="true" context\="java-statements" deleted\="false" description\="print to standard out" enabled\="true" name\="sysf">System.out.printf(${word_selection}${});${cursor}</template><template autoinsert\="true" context\="java" deleted\="false" description\="print to standard out" enabled\="true" name\="syst">System.out.print(${word_selection}${});${cursor}</template></templates>
 sourceHoverBackgroundColor=236,235,236
 spelling_locale_initialized=true
 typefilter_migrated_2=true

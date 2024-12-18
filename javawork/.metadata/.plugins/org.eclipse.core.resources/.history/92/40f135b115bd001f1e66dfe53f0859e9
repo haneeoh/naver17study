@@ -1,0 +1,25 @@
+package day1218;
+
+class Car2
+{
+	String model;
+	boolean start;
+	int speed;
+}
+
+public class Book217 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Car2 myCar2=new Car2();
+		myCar2.model="bmw";
+		
+		System.out.println("모델명: "+myCar2.model);
+		System.out.println("시동여부: "+myCar2.start);
+		System.out.println("현재속도: "+myCar2.speed);
+		
+		
+	}
+
+}
