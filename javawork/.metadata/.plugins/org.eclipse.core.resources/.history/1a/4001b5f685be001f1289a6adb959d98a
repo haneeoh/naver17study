@@ -1,0 +1,30 @@
+package day1220;
+
+import day1220_2.Apple;
+
+class Orange extends Apple
+{
+	public void play()
+	{
+		this.job();//public
+		this.study();//protected
+		//this.draw(); //오류:디폴트값은 상속시에도 접근불가
+	}
+	
+	@Override
+	protected void process() {
+		// TODO Auto-generated method stub
+		super.process();
+		System.out.println("Oracle,Mysql 공부를 더 깊게 합니다.");
+	}
+}
+
+public class Ex4Inheri {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Orange or=new Orange();
+		or.play();
+	}
+
+}

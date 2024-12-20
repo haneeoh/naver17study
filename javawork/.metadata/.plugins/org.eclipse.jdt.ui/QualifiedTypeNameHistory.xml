@@ -4,7 +4,6 @@
     <fullyQualifiedTypeName name="day1217.Ex14StringSort"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="java.sql.Date"/>
-    <fullyQualifiedTypeName name="java.text.NumberFormat"/>
     <fullyQualifiedTypeName name="day1218.Car"/>
     <fullyQualifiedTypeName name="day1218.Korean"/>
     <fullyQualifiedTypeName name="java.util.Calendar"/>
@@ -13,5 +12,16 @@
     <fullyQualifiedTypeName name="java.util.StringTokenizer"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.text.NumberFormat"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="day1220.SubObj1"/>
+    <fullyQualifiedTypeName name="day1220_2.DbServerSystem"/>
+    <fullyQualifiedTypeName name="day1220.DataProcess"/>
+    <fullyQualifiedTypeName name="day1220_2.Apple"/>
+    <fullyQualifiedTypeName name="day1220.Parent1"/>
+    <fullyQualifiedTypeName name="java.lang.Process"/>
+    <fullyQualifiedTypeName name="day1220.parent2"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.Vector"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>

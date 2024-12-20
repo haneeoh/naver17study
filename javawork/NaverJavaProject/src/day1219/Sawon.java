@@ -2,16 +2,19 @@ package day1219;
 
 public class Sawon {
 
-	 //멤버변수 사원명 sawonName, 기본급 gibonPay, 직급 position
-	 //수당 suDang, 가족 수 famSu
+	 //멤버변수 사원명 sawonName, 가족수 famSu , 직급 position
+	 //수당 suDang, 기본급 gibonPay
+	
 	private String sawonName;
 	private String position;
-	private int gibonPay;
-	private int suDang;
 	private int famSu;
 	
 	 //디폴트 생성자
 	 //사원명, 직급, 가족수를 인자로 받는 생성자
+	
+	public Sawon() {
+		
+	}
 	
 	public Sawon(String sawonName, String position, int famSu) {
 		this.sawonName = sawonName;
@@ -19,7 +22,7 @@ public class Sawon {
 		this.famSu = famSu;
 	}
 	
-	//setter & getter method
+	//setter & getter method  -> private 이라서 필요
 
 	public String getSawonName() {
 		return sawonName;
@@ -37,22 +40,6 @@ public class Sawon {
 		this.position = position;
 	}
 
-	public int getGibonPay() {
-		return gibonPay;
-	}
-
-	public void setGibonPay(int gibonPay) {
-		this.gibonPay = gibonPay;
-	}
-
-	public int getSuDang() {
-		return suDang;
-	}
-
-	public void setSuDang(int suDang) {
-		this.suDang = suDang;
-	}
-
 	public int getFamSu() {
 		return famSu;
 	}
@@ -66,47 +53,57 @@ public class Sawon {
 	
 	public int getGibonPay()
 	{
-		
+		int gibon=switch(position)
+				{
+					case "부장"->4500000;
+					case "과장"->3000000;
+					case "대리"->2500000;
+					case "사원"->1500000;
+					default->0;
+				};
+		return gibon; //새로 추가된 기능 사용시 break 사용할 필요없음
 	}
 	
 	 //직급에 따라 수당을 구하는데 부장,과장->70 	대리,사원->50
 	 //getSudang()
 	public int getSuDang()
 	{
-		
+		int sudang=switch(position)
+				{
+					case "부장","과장"->700000;
+					case "대리","사원"->500000;
+					default->0;
+				};
+		return sudang;
 	}
 	
 	 //getGibonPay() 값을 받아서 세금 5프로를 구해서 반환하는
 	 //getTax()
 	public int getTax()
 	{
-		
+		int tax=getGibonPay()*5/100;
+		return tax;
 	}
 	
 	 //가족수가5인 이상이면 30반환, 5인 미만 2인 이상은 10 반환, 나머지는0
 	 //getFamSudang()
 	public int getFamSudang()
 	{
-		if (famSu>5)
-		{
-			
-		}
-		if (famSu<5 && famSu>2)
-		{
-			
-		}
-		else
-			
+		int famSudang=0;
+		if(famSu>=5) famSudang=300000;
+		else if(famSu>=2)famSudang=100000;
+		else famSudang=0;
+		
+		return famSudang;
 	}
 	
 	 //실수령액을 구해서 반환하는 메서드 기본급+수당-세금+가족수당을 구해서 반환
 	 //getNetPay
+	
 	public int getNetPay()
 	{
-		
+		return getGibonPay()+getSuDang()-getTax()+getFamSu();
 	}
-	
-	
 	
 }
 

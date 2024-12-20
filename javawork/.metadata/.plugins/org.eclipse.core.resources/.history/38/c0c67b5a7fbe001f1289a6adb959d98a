@@ -1,0 +1,15 @@
+package day1220;
+
+import day1220_2.DbServerSystem;
+
+class DataProcess extends DbServerSystem
+{
+	
+}
+public class Ex3Inheri {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

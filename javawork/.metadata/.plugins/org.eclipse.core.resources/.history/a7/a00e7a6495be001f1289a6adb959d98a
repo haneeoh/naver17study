@@ -1,0 +1,34 @@
+package day1220;
+
+class Parent2
+{
+	public void process();
+}
+
+class Your1 extends Parent2
+{
+	@Override
+	public void process() {
+		// TODO Auto-generated method stub
+		System.out.println("벽지 공사");
+	}
+}
+
+class Your2 extends Parent2
+{
+	@Override
+	public void process() {
+		// TODO Auto-generated method stub
+		System.out.println("타일 공사");
+	}
+}
+
+////////
+public class Ex6Abstract {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
