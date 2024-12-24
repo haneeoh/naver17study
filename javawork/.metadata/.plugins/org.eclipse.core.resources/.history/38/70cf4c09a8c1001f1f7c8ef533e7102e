@@ -1,0 +1,11 @@
+package day1224;
+
+public class Ex4FileReadWrite {
+	static final String FILENAME="/Users/haneeoh/Desktop/naver1210/member.txt";
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
