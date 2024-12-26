@@ -8,8 +8,8 @@ public class Ex10ListVector {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		List<String> list1=new Vector<String>();//기본 10개가 할당
-		//List<String> list2=new Vector<String>(5);//기본 5개가 할당
+		List<String> list1=new Vector<String>();//기본 10개가 할당 (기본사용)
+		//List<String> list2=new Vector<String>(5);//기본 5개가 할당 (넘어설경우 두배 증가)
 		List<String> list2=new Vector<String>(5,3);//기본 5개가 할당, 데이터 추가시 3개씩 증가
 		
 		System.out.println("List1 의 데이타 갯수"+list1.size()+",할당갯수:"
