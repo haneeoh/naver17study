@@ -3402,3 +3402,29 @@ Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -product org.eclipse
 
 !ENTRY ch.qos.logback.classic 1 0 2025-01-07 16:58:55.854
 !MESSAGE Logback config file: /Users/haneeoh/Desktop/naver1210/study/javawork/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.0.20241001-1350.xml
+!SESSION 2025-01-07 17:08:44.433 -----------------------------------------------
+eclipse.buildId=4.34.0.20241128-0756
+java.version=21.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/haneeoh/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -product org.eclipse.epp.package.jee.product -keyring /Users/haneeoh/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2025-01-07 17:08:45.277
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-01-07 17:08:46.140
+!MESSAGE Logback config file: /Users/haneeoh/Desktop/naver1210/study/javawork/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.0.20241001-1350.xml
+!SESSION 2025-01-08 09:29:29.992 -----------------------------------------------
+eclipse.buildId=4.34.0.20241128-0756
+java.version=21.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/haneeoh/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -product org.eclipse.epp.package.jee.product -keyring /Users/haneeoh/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2025-01-08 09:29:31.365
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-01-08 09:29:32.300
+!MESSAGE Logback config file: /Users/haneeoh/Desktop/naver1210/study/javawork/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.0.20241001-1350.xml
