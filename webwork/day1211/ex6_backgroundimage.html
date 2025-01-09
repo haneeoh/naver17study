@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            margin: 10px;
+            float: left;
+        }
+        #one{
+            background-image: url(../mycar/mycar13.png);
+            background-size: 100px 100px;/*기본값 repeat 작게넣으면 반복됨*/
+            background-repeat: no-repeat;/*넣어서 반복 삭제*/
+            background-position: right bottom;
+        }
+        #two{
+            background: url(../mycar/mycar7.png);
+            background-size: 200px 170px;/*size 는 따로줘야함*/
+        }
+        #three{
+            background: url(../mycar/mycar7.png) center center;
+            background-size: cover;/*배경 이미지 사이즈의 비율이 맞지 않아 키웠을때 잘리더라도 주어진 영역을 완전히 채운다*/
+        }
+        #four{
+            background: url(../mycar/mycar7.png) no-repeat center center;
+            background-size: contain; /*빈 공간이 생기더라도 이미지 전체가 나오게한다(no-repeat 필수!)*/
+        }
+    </style>
+</head>
+<body>
+    <div id="one"></div>
+    <div id="two"></div>
+    <div id="three"></div>
+    <div id="four"></div>
+</body>
+</html>

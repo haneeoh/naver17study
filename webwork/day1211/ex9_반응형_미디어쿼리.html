@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*공통*/
+        h1{
+            font:bold 2em "tvN 즐거운이야기OTF";
+            text-align: center;
+            background-color: pink;
+        }
+        /*1024이상일경우 적용*/
+        @media all and (min-width:1024px) {
+            body{
+                background: url(../mycar/mycar10.png) no-repeat;
+                background-size: cover;
+            }
+            h1{
+                color: green;
+                background-color: yellowgreen;
+            }
+        }
+        /*700~1023 적용*/
+        @media all and (min-width:700px) and (max-width:1023px){
+            body{
+                background: url(../mycar/mycar13.png) no-repeat;
+                background-size: cover;
+            }
+            h1{
+                color: gray;
+                background-color: yellow;
+            }
+        }
+        /*~700 적용*/
+        @media all and (max-width:699px){
+            body{
+                background: url(../mycar/mycar11.png) no-repeat;
+                background-size: cover;
+            }
+            h1{
+                color: lightsalmon;
+                background-color: rgb(44, 44, 31);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>반응형 테스트</h1>
+</body>
+</html>
