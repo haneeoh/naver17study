@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>502 study</title>
+      <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Gaegu&family=Jua&family=Nanum+Pen+Script&family=Playwrite+AU+SA:wght@100..400&family=Single+Day&display=swap" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+      <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+      <style>
+          body *{
+            font-family: 'Jua';
+          }
+
+          div.mytooltip{
+            position: absolute;
+            line-height: 1.5;
+            color: black;
+            width: 200px;
+            background-color: #f90;
+            border: 2px solid white;
+            padding: 15px;
+            font-size: 14px;
+            border-radius: 30px;
+            opacity: 0.8;
+            display: none;
+          }
+      </style>
+      <script>
+        $(function(){
+          $("a").bind({
+            mousemove:function(e){
+              $("div.mytooltip").css({
+                "left":e.pageX+"px",
+                "top":e.pageY+"px"
+              });
+            },
+            mouseover:function(e){
+              $("div.mytooltip").fadeIn('fast');
+              $("div.mytooltip").html(`
+             Java<br>HTML5<br>SpringBoot<br>MySQL`)
+             .css("background-color","#f90");
+            },
+            mouseout:function(e){
+              $("div.mytooltip").fadeOut('fast');
+            }
+          });
+          $("b.view").bind({
+            mousemove:function(e){
+              $("div.mytooltip").css({
+                "left":e.pageX+"px",
+                "top":e.pageY+"px"
+              });
+            },
+            mouseover:function(e){
+              let text=$(this).text();
+              let color=$(this).attr("color");
+              $("div.mytooltip").text(text).css("background-color",color);
+              $("div.mytooltip").fadeIn('slow');
+            },
+            mouseout:function(e){
+              $("div.mytooltip").fadeOut('fast');
+            }
+          });
+          $("ol.today li").bind({
+            mousemove:function(e){
+              $("div.mytooltip").css({
+                "left":e.pageX+"px",
+                "top":e.pageY+"px"
+              });
+            },
+            mouseover:function(e){
+              let fname=$(this).text();
+              let photo=$(this).attr("photo");
+              $("div.mytooltip").fadeIn('fast');
+              $("div.mytooltip").html(`
+              <h6>${fname}</h6>
+              <img src="${photo}" width=100 border="1">
+              `).show();
+            },
+            mouseout:function(e){
+              $("div.mytooltip").fadeOut('fast');
+            }
+          });
+        });
+      </script>
+    </head>
+    <body>
+      <div class="mytooltip">
+        Java<br>
+        HTML5<br>
+        SpringBoot<br>
+        MySQL
+      </div>
+
+      <a style="font-size: 25px;cursor: pointer;">
+      [단독] 윤은혜, 전현무·이장우와 MBC 연예대상 3MC 발탁
+      </a>
+      <hr>
+      <pre style="font-size: 15px;">'
+        [OSEN=연휘선 기자] 배우 윤은혜가 1세대 걸그룹 <b class="view" color="pink">베이비복스 완전체</b> 무대로
+        호평을 받은 데 이어 설연휴에 개최되는 <b class="view" color="yellow">'2024 MBC 방송연예대상'</b>에 MC로 발탁됐다. 
+        20일 OSEN 취재 결과 윤은혜는 오는 28일 개최되는 '2024 MBC 방송연예대상
+        (약칭 MBC 연예대상)'에 <b class="view" color="lightgray">홍일점 MC</b>로 나선다. 그는 아나운서 출신 방송인 전현무,
+        배우 이장우와 함께 3MC로 <b class="view" color="green">'MBC 연예대상'</b> 생방송을 진행할 예정이다.
+      </pre>
+      <hr>
+      <ol class="today">
+        <li photo="../food/1.jpg">에그샌드위치</li>
+        <li photo="../food/11.jpg">망고빙수</li>
+        <li photo="../food/2.jpg">닭꼬치</li>
+        <li photo="../mycar/mycar11.png">노랑자동차</li>
+        <li photo="../mycar/mycar13.png">핑크자동차</li>
+      </ol>
+    </body>
+</html>
