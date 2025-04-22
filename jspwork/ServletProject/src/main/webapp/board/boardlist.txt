@@ -1,0 +1,14 @@
+BoardListServlet (mapping: /board/list) --(forward)-- boardlist.jsp
+BoardFormServlet(/board/writeform) --(forward)-- writeform.jsp
+BoardInsertServlet(/board/insert) --(redirect)-- /board/list
+BoardDetailServlet(/board/detail) --(forward)-- content.jsp
+
+BoardDeletePassFormServlet(/board/deletepassform) --(forward)-- deletepassform.jsp
+BoardDeleteProcessServlet(/board/delete) --(passwd:fail -> forward)-- fail.jsp
+									--(passwd:ok -> redirect)-- /board/list (왔던 페이지로 이동)
+
+//업데이트는 제목.내용만 나오게 만들기
+
+BoardUpdateFormServlet(/board/updateform) --(foward)-- updateform.jsp
+BoardUpdateProcessServlet(/board/update) --(수정 후 redirect)-- /board/detail
+(목록으로 왔을때 페이지넘버가 기존의 페이지넘버인지 확인해야함)

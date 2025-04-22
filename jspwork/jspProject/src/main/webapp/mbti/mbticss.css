@@ -1,0 +1,242 @@
+@charset "UTF-8";
+
+body * {
+	font-family: 'Sunflower';
+}
+
+.hidden {
+	display: none;
+}
+
+.box {
+	position: relative;
+	width: 440px;
+	height: 800px;
+	margin: 32px;
+	background-color: #437397;
+	border-radius: 10px;
+}
+.box2 {
+	position: relative;
+	width: 440px;
+	height: 1200px;
+	margin: 32px;
+	background-color: #437397;
+	border-radius: 10px;
+}
+.box .start {
+	font-size:35px;
+	color:#ccdae5;
+	position: absolute;
+	top:250px;
+	left:68px;
+}
+.box .startbtn {
+	position: absolute;
+	width: 250px;
+	height: 80px;
+	top: 608px;
+	left: 95px;
+	background-color: #ccdae5;
+	color: #437397;
+	border-radius: 30px;
+	box-shadow: 5px 7px 0px #00000040;
+	cursor: pointer;
+}
+
+.box .startbtn:hover {
+	background-color: #294051;
+	color: #ccdae5;
+}
+
+.box .startbtn>span {
+	position: absolute;
+	font-family: 'Micro 5';
+	font-size: 60px;
+	top: -3px;
+	left: 75px;
+}
+
+.box .nextbtn {
+	position: absolute;
+	width: 250px;
+	height: 80px;
+	top: 608px;
+	left: 95px;
+	background-color: #ccdae5;
+	color: #437397;
+	border-radius: 30px;
+	box-shadow: 5px 7px 0px #00000040;
+	cursor: pointer;
+}
+
+.box .nextbtn>span {
+	position: absolute;
+	font-family: 'Micro 5';
+	font-size: 60px;
+	top: -3px;
+	left: 75px;
+}
+
+.box .nextbtn:hover {
+	background-color: #294051;
+	color: #ccdae5;
+}
+
+.box .namebox {
+	width: 250px;
+	position: absolute;
+	top: 500px;
+	left: 95px;
+}
+
+.box .nickname {
+	position: absolute;
+	top: 470px;
+	left: 95px;
+	color:#ccdae5;
+}
+
+/* .box .range {
+	position: absolute;
+	width: 350px;
+	height: 15px;
+	top: 57px;
+	left: 45px;
+	background-color: #fff4ee80;
+	border-radius: 10px;
+} */
+
+.box .range2 {
+	position: absolute;
+	width: 1px;
+	height: 15px;
+	top: 57px;
+	left: 45px;
+	background-color: #294051;
+	border-radius: 10px;
+}
+
+.box .back {
+	position: absolute;
+	width: 350px;
+	height: 350px;
+	top: 150px;
+	left: 45px;
+	background-color: #da9180;
+	border: 1px solid #4f4f4fbf;
+	box-shadow: 10px 10px 0px #00000073;
+}
+
+.back .line {
+	position: absolute;
+	width: 350px;
+	height: 1px;
+	left: -1px;
+	top: 23px;
+	object-fit: cover;
+	background-color: #4f4f4fbf;
+}
+
+.back .cir1 {
+	position: absolute;
+	width: 9px;
+	height: 9px;
+	top: 7px;
+	left: 6px;
+	background-color: #4f4f4fbf;
+	border-radius: 4.5px;
+}
+
+.back .cir1 {
+	position: absolute;
+	width: 9px;
+	height: 9px;
+	top: 7px;
+	left: 6px;
+	background-color: #4f4f4fbf;
+	border-radius: 4.5px;
+}
+
+.back .cir2 {
+	position: absolute;
+	width: 9px;
+	height: 9px;
+	top: 7px;
+	left: 19px;
+	background-color: #4f4f4fbf;
+	border-radius: 4.5px;
+}
+
+.back .cir3 {
+	position: absolute;
+	width: 9px;
+	height: 9px;
+	top: 7px;
+	left: 32px;
+	background-color: #4f4f4fbf;
+	border-radius: 4.5px;
+}
+
+.back .title {
+	position: absolute;
+	top: 12px;
+	left: 16px;
+	font-family: "Micro 5";
+	font-size: 60px;
+	color: #fff3ee;
+}
+
+.back .p {
+	position: absolute;
+	width: 350px;
+	height: 100px;
+	top: 120px;
+	left: 0px;
+	font-family: "Sunflower";
+	font-size: 35px;
+	font-weight: 700;
+	text-align: center;
+	color: #fff3ee;
+	letter-spacing: 0;
+	line-height: normal;
+}
+
+.box .yes {
+	position: absolute;
+	width: 207px;
+	height: 224px;
+	top: 530px;
+	left: 18px;
+	object-fit: cover;
+	cursor: pointer;
+}
+
+.box .no {
+	position: absolute;
+	width: 207px;
+	height: 224px;
+	top: 530px;
+	left: 225px;
+	object-fit: cover;
+	cursor: pointer;
+}
+
+.box2 .image>img {
+	position: absolute;
+	top: 100px;
+	left: 20px; width : 400px;
+	height: 400px;
+	width: 400px;
+}
+.box2 .rename{
+	font-size:1.7em;
+	color:#fff3ee;
+}
+.box2 .rembti{
+	font-size:1.1em;
+}
+.box2 .rewriteday{
+	font-size: 0.8em;
+	color: rgb(115, 165, 229);
+}

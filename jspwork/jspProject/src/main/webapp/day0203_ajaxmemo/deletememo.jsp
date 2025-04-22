@@ -5,4 +5,5 @@
 	int idx=Integer.parseInt(request.getParameter("idx"));
 	MemoDao dao=new MemoDao();
 	dao.deleteMemo(idx);
+	
 %>

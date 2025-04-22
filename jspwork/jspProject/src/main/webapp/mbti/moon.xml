@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<question>
+		<title>1.</title>
+		<p>나는 해야 할 일을<br/>자주 미룬다.</p>
+		<num>P</num>
+	</question>
+	<question>
+	<title>2.</title>
+		<p>나는 활동적인사람이 아니다.</p>
+		<num>I</num>
+		</question>
+		<question>
+	<title>3.</title>
+		<p>나는 상상력이 풍부하다.</p>
+		<num>N</num>
+		</question>
+		<question>
+	<title>4.</title>
+		<p>나는 즉흥적인 선택을<br/>자주 하는 편이다.</p>
+		<num>P</num>
+		</question>
+		<question>
+	<title>5.</title>
+		<p>나는 의사표현을 할 때<br/>상대방이 어떻게 받아들일지 생각한다.</p>
+		<num>F</num>
+		</question>
+		<question>
+	<title>6.</title>
+		<p>새로운 일을 도전하는건<br/>언제나 즐겁다.</p>
+		<num>N</num>
+		</question>
+		<question>
+	<title>7.</title>
+		<p>새로운 사람과 대화하는게 어렵다.</p>
+		<num>I</num>
+		</question>
+		<question>
+	<title>8.</title>
+		<p>나는 여럿보다 혼자 즐길 수 있는 취미가 좋다.</p>
+		<num>I</num>
+		</question>
+		<question>
+	<title>9.</title>
+		<p>여행이 계획대로 되지 않더라도 괜찮다</p>
+		<num>P</num>
+		</question>
+		<question>
+	<title>10.</title>
+		<p>나는 예술의 중요함을 믿는다</p>
+		<num>N</num>
+		</question>
+		<question>
+	<title>11.</title>
+		<p> 나는 쉽게 스트레스를 받는 편이다</p>
+		<num>F</num>
+		</question>
+		<question>
+	<title>12.</title>
+		<p>내가 겪어보지 않은 일에도 진심으로 공감하고 위로하는 편이다</p>
+		<num>F</num>
+		</question>
+
+</data>
