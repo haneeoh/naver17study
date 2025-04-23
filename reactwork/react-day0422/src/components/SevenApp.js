@@ -3,9 +3,9 @@ import {Alert} from "@mui/material";
 
 
 const SevenApp = () => {
-    const names=['이효리','강호동','이영자','손나은','변우석','강지영',]
+    const names = ['이효리', '강호동', '이영자', '손나은', '변우석', '강지영',]
     // 방법1
-    const namelist=names.map((name,index)=><h5 key={index}>{index}:{name}</h5>);
+    const namelist = names.map((name, index) => <h5 key={index}>{index}:{name}</h5>);
     return (
         <div>
             <h3 className='alert alert-success'>SevenApp-map</h3>
@@ -18,21 +18,23 @@ const SevenApp = () => {
             {/*}*/}
 
             {
-                [...new Array(10)].map((_, index) => <b key={index}>{index+1}&nbsp;</b>)
+                [...new Array(10)].map((_, index) => <b key={index}>{index + 1}&nbsp;</b>)
             }
             <hr/>
             <h5>mycar 폴더에 mycar 이미지를 넣고 mycar 1부터 15번까지 이미지 출력하기</h5>
             {
-                [...new Array(15)].map((_, index) => <img key={index} alt='' src={require(`../mycar/mycar${index+1}.png`)} style={{width: '100px'}}/>)
+                [...new Array(15)].map((_, index) => <img key={index} alt=''
+                                                          src={require(`../mycar/mycar${index + 1}.png`)}
+                                                          style={{width: '100px'}}/>)
             }
             <hr/>
 
             {namelist}
             {/* 배열 반복문을 직접 넣는 방법*/}
             {
-                names.map((name,index)=>
+                names.map((name, index) =>
                     <Alert key={index} severity='secondary'>{index}:{name}
-                    <img alt='' src={require(`../image2/${index+1}.jpg`)} style={{width: '100px'}}/>
+                        <img alt='' src={require(`../image2/${index + 1}.jpg`)} style={{width: '100px'}}/>
                     </Alert>)
             }
         </div>
